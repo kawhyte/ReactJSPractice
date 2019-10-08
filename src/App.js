@@ -1,11 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Nav from './Nav';
+import MainContent from './MainContent';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
+
+
+
+
       <header className="App-header">
+      <Nav />
+  <MainContent />
+  <Footer></Footer>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,13 +28,6 @@ function App() {
         >
           Learn React
         </a>
-
- <ul>
-
-<li>Kenny</li>
-<li>Omar</li>
-<li>Rene</li>
-</ul>
 </header>
 
     </div>
