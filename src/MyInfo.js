@@ -17,9 +17,6 @@ Doyle, Charles. IN: CRS reports (Library of Congress. Congressional Research Ser
 </ul>
 
 </div>
-
-
-
 );
 
 }
