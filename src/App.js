@@ -1,27 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Nav from './Nav';
-import MainContent from './MainContent';
-import Footer from './Footer';
-import Joke from './Joke';
-import jokeData from './jokesData'
-import jokesData from './jokesData';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import productsData from "./productData";
+import Product from "./Product";
 
 function App() {
-const jokeComponent = jokesData.map((joke)=>{
-return(
-  <Joke key = {joke.id} question={joke.question} punch = {joke.punch}/>
-)
-});
+  const productComponent = productsData.map(product => {
+    return (
+      <Product key={product.id} name={product.name} price={product.price} description={ product.description}/>
+    );
+  });
 
   return (
     <div className="App">
-
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-   
-{jokeComponent}
+
+        {productComponent}
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -33,8 +28,7 @@ return(
         >
           Learn React
         </a>
-</header>
-
+      </header>
     </div>
   );
 }
