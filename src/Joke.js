@@ -1,12 +1,14 @@
 import React from 'react'
 
 
-function Joke(prop){
+function Joke(props){
+
+    console.log(props.jokes.question)
 return(
 <div>
 
-<h1>Q: {prop.question}</h1>
-<h1>A: {prop.punch}</h1>
+<h1>Q: {props.jokes.question}</h1>
+<h1>A: {props.jokes.punch}</h1>
 
 </div>
 
